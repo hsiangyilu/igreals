@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* 設計 token（對應 Figma 變數：main color / Text_primary / Gray1 …） */
+@theme {
+  --color-brand: #f7931e;
+  --color-content-primary: #444444;
+  --color-content-heading: #363636;
+  --color-content-body: #333333;
+  --color-content-muted: #bababa;
+  --color-bg-base: #ffffff;
+  --color-bg-surface: #f7f7f7;
+
+  --font-display: var(--font-raleway), var(--font-noto-sans-tc), sans-serif;
+  --font-body: var(--font-noto-sans-tc), var(--font-raleway), sans-serif;
+}
+
+body {
+  background: var(--color-bg-base);
+  color: var(--color-content-primary);
+  font-family: var(--font-display);
+}
